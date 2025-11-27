@@ -16,7 +16,7 @@ export function CatImage({url}: ciprops){
     }
     return(
     <div>
-    <button onClick={refreshImage}>次の猫ちゃん</button>
+    <button onClick={refreshImage}>次の可愛い猫ちゃん</button>
     {imageUrl && <img src={imageUrl} />}
     </div>
     );
