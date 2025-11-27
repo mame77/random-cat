@@ -1,3 +1,7 @@
-export default function Home() {
-    return <div>猫画像予定地</div>
+import { CatImage } from "./cat-image";
+import { fetchImage } from "./fetch-images";
+
+export default async function Home() {
+    const image = await fetchImage();
+    return <CatImage url={image.url} />;
 }
